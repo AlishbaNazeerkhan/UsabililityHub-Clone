@@ -28,7 +28,7 @@ This project is a clone of the homepage of usability.com. The aim of this projec
 
 1. Clone the repository to your local machine using the command below:
 ```
-git clone https://github.com/your-username/usability-clone.git
+git clone https://github.com/AlishbaNazeerkhan/UsabililityHub-Clone.git
 ```
 
 ## Usage
