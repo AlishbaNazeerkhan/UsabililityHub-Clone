@@ -7,6 +7,7 @@
     <meta name="author" content="Alishba">
     <title>Usability Hub</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive_design.css">
 </head>
 
 <body>
@@ -26,7 +27,7 @@
             <a href="#" class="company-logo">
                 <img src="./Assets/asset 1.png" alt="company logo">
             </a>
-            <div class="nav-links">
+            <div class="nav-links" id="nav-links">
                 <ul class="flex">
                     <li><a href="#" class="hover-link">Products</a></li>
                     <li><a href="#" class="hover-link">Customer</a></li>
@@ -36,6 +37,7 @@
                     <li><a href="#" class="hover-link primary-button">Sign up</a></li>
                 </ul>
             </div>
+            <a href="#" class="nav-toggle hover-link" id="nav-toggle"><i class="fa-solid fa-bars"></i></a>
         </div>
     </nav>
 
@@ -160,16 +162,16 @@
     </section>
 
     <section class="big-feature-section">
-        <div class="container flex big-feature-container">
+        <div class="container flex big-feature-container" id="second-big-feature">
+            <div class="feature-img">
+                <img src="./Assets/asset 21.png" alt="">
+
+            </div>
             <div class="feature-txt flex">
                 <h4>Effortless validation for</h4>
                 <h3>Design professionals</h3>
                 <p>Test interfaces, interaction flows, iconography and more, to help you create inituitive and
                     delightful experiences for your users.</p>
-            </div>
-            <div class="feature-img">
-                <img src="./Assets/asset 21.png" alt="">
-
             </div>
         </div>
     </section>
@@ -273,6 +275,15 @@
         </div>
     </div>
     <script src="https://kit.fontawesome.com/fbd33889ac.js" crossorigin="anonymous"></script>
+    <script>
+        const toggleButton = document.getElementById("nav-toggle");
+        const navLinks = document.getElementById("nav-links");
+        
+        toggleButton.addEventListener("click", () => {
+            navLinks.classList.toggle('active');
+        })
+
+    </script>
 </body>
 
 </html>
