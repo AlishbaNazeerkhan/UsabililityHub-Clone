@@ -72,6 +72,7 @@ ul {
     padding: 12px 24px;
     box-shadow: 0 0 2px var(--secondary-text-color);
     transition: 0.2s ease-out;
+    text-align: center;
 } 
 
 .primary-button:hover {
@@ -126,6 +127,7 @@ ul {
 .main-nav{
     margin-top: 20px;
     justify-content: space-between;
+    position: relative;
 }
 
 .company-logo img{
@@ -141,6 +143,10 @@ ul {
     gap: 40px;
 }
 
+.nav-toggle{
+    display: none;
+}
+
 /* Header Section */
 
 header{
@@ -154,7 +160,6 @@ header{
 
 .header-left {
     max-width: 40vw;
-    max-height: 300px;
     }
 
 .header-left h1{
@@ -167,7 +172,7 @@ header{
 }
 
 .header-right img{
-    width: 600px;
+    width: 100%;
     
 }
 
@@ -180,7 +185,10 @@ header{
 }
  
 .logos{
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+
 }
 
 .logo{
@@ -201,6 +209,7 @@ header{
     text-align: center;
     color: var(--primary-text-color);
     font-weight: 600;
+    margin-bottom: 40px;
 }
 
 .feature-header h2{
@@ -211,7 +220,7 @@ header{
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 20px;
-    gap: 40px;
+    gap: 20px;
 }  
 
 .features-card{
@@ -231,6 +240,9 @@ header{
     gap:30px;
 }
 
+#second-big-feature{
+    flex-direction: row-reverse;
+}
 .feature-img img{
     width:100%;
 }
@@ -242,6 +254,9 @@ header{
 
 /* example section */
 
+.examples-section{
+    padding: 80px 20px;
+}
 .examples-header {
     flex-direction: column;
     gap: 20px;
@@ -257,7 +272,7 @@ header{
 .examples-card{
     width: 23%;
     position: relative;
-    min-height: 350px;
+    height: 300px;
     background: black;
     background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)),
     url(./Assets/asset\ 37.jpeg);
@@ -334,9 +349,7 @@ footer {
 
 }
 .subfooter-container{
-    justify-content: center;
-    
+    justify-content: center; 
     gap: 30px;
+    flex-wrap: wrap;
 }
-
-
